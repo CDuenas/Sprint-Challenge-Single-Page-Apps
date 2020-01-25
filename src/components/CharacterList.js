@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import CharacterCard from "./CharacterCard";
 import { Container, Row } from "reactstrap";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
