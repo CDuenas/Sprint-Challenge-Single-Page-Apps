@@ -3,6 +3,8 @@ import axios from "axios";
 import CharacterCard from "./CharacterCard";
 import { Container, Row } from "reactstrap";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import SearchForm from "./SearchForm";
+
 
 export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
@@ -36,6 +38,10 @@ export default function CharacterList() {
             />
         );
       })}
+      </Row>
+
+      <Row>
+        <SearchForm />
       </Row>
     </Container>
   );
